@@ -45,7 +45,10 @@
                 <p class="mb-3">產品簡介: {{ targetProduct.description }}</p>
                 <p class="mb-3">{{ targetProduct.content }}</p>
                 <p class="mb-3">產品價格: {{ targetProduct.price }} 元</p>
-                <p>更多商品照: </p>
+                <div class="flex item-center">
+                    <div class="bg-sky-200 w-2 mr-1"></div>
+                    <p>更多商品照: </p>
+                </div>
                 <template v-for="imageSrc in targetProduct.imagesUrl">
                     <img :src="imageSrc" alt="product_imgs" class="w-52 h-40 my-2 mx-0 object-cover">
                 </template>
